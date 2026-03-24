@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustracion de Frankenstein de Del Toro</title>
+  <desc id="desc">Retrato gotico con castillo, relampago y figura monstruosa.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2f42"/>
+      <stop offset="100%" stop-color="#070d14"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dbf8ff"/>
+      <stop offset="100%" stop-color="#74d5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)"/>
+  <path d="M0 426c113-47 246-76 382-69 195 10 358 91 578 178V640H0Z" fill="#0b1219"/>
+  <path d="M633 70l-44 112h36l-54 146 109-141h-49l47-117z" fill="url(#bolt)"/>
+  <g transform="translate(556 177)" fill="#111e29">
+    <rect x="78" y="123" width="95" height="165"/>
+    <rect x="10" y="154" width="98" height="134"/>
+    <rect x="177" y="179" width="69" height="109"/>
+    <polygon points="10,154 59,112 108,154"/>
+    <polygon points="78,123 125,73 173,123"/>
+    <polygon points="177,179 211,138 246,179"/>
+  </g>
+  <g transform="translate(198 185)">
+    <ellipse cx="196" cy="239" rx="116" ry="132" fill="#152432"/>
+    <rect x="108" y="98" width="178" height="225" rx="26" fill="#1f3646"/>
+    <rect x="138" y="36" width="118" height="86" rx="18" fill="#27485e"/>
+    <rect x="137" y="161" width="39" height="18" rx="6" fill="#d7f5ff"/>
+    <rect x="219" y="161" width="39" height="18" rx="6" fill="#d7f5ff"/>
+    <rect x="171" y="207" width="52" height="16" rx="6" fill="#0d1821"/>
+    <rect x="118" y="72" width="20" height="46" rx="8" fill="#d9edf7"/>
+    <rect x="256" y="72" width="20" height="46" rx="8" fill="#d9edf7"/>
+  </g>
+  <text x="70" y="574" fill="#f3f7fa" font-family="Georgia, serif" font-size="46">Frankenstein de Del Toro</text>
+</svg>

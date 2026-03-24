@@ -1,0 +1,450 @@
+﻿:root {
+  --bg: #07020d;
+  --bg-soft: #12081d;
+  --surface: rgba(17, 14, 28, 0.88);
+  --surface-strong: rgba(26, 18, 42, 0.96);
+  --text: #f7efff;
+  --muted: #c7b7db;
+  --accent: #ff4ecb;
+  --accent-strong: #62e9ff;
+  --accent-soft: rgba(255, 78, 203, 0.14);
+  --border: rgba(98, 233, 255, 0.16);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
+  --max-width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(255, 78, 203, 0.2), transparent 22%),
+    radial-gradient(circle at top right, rgba(98, 233, 255, 0.16), transparent 18%),
+    linear-gradient(180deg, #12051c 0%, #06020b 55%, #040108 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 120px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0, rgba(255, 255, 255, 0.01) 1px, transparent 1px, transparent 120px);
+  opacity: 0.24;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.wrap {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #111;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.site-header {
+  position: static;
+  border-bottom: 1px solid rgba(98, 233, 255, 0.14);
+  background: linear-gradient(180deg, rgba(9, 5, 16, 0.92) 0%, rgba(9, 5, 16, 0.8) 100%);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.header-grid,
+.footer-grid {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.header-grid {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  padding: 1.3rem 0 1.2rem;
+}
+
+.header-copy {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.site-title,
+.page-title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-shadow:
+    0 0 10px rgba(255, 78, 203, 0.18),
+    0 0 24px rgba(98, 233, 255, 0.1);
+}
+
+.site-title-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.footer-logo span {
+  font-size: 1.55rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 10px rgba(255, 78, 203, 0.16);
+}
+
+.section-kicker,
+.card-label,
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.76rem;
+  color: var(--accent-strong);
+  margin: 0;
+}
+
+.section-heading h2,
+.summary-box h2,
+.prose h2,
+.review-article h2 {
+  line-height: 1.06;
+  margin: 0 0 0.75rem;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+}
+
+.review-meta,
+.section-heading p,
+.summary-box,
+.prose p,
+.review-article p,
+.footer-grid p {
+  color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-nav a,
+.site-footer nav a,
+.text-link {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid rgba(98, 233, 255, 0.22);
+  color: var(--text);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 78, 203, 0.06),
+    0 0 18px rgba(98, 233, 255, 0.06);
+}
+
+.reviews-section,
+.page-main,
+.review-main {
+  padding: 2.3rem 0 4rem;
+}
+
+.summary-box,
+.card,
+.review-article,
+.prose {
+  background: linear-gradient(180deg, rgba(23, 17, 36, 0.94) 0%, rgba(11, 8, 21, 0.98) 100%);
+  border: 1px solid rgba(98, 233, 255, 0.12);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.summary-box {
+  padding: 1.5rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 78, 203, 0.08),
+    0 0 0 1px rgba(98, 233, 255, 0.08),
+    0 24px 48px rgba(0, 0, 0, 0.32);
+}
+
+.summary-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.section-heading {
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  text-shadow: 0 0 10px rgba(255, 78, 203, 0.1);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(98, 233, 255, 0.24);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 78, 203, 0.08),
+    0 0 24px rgba(255, 78, 203, 0.08),
+    0 28px 44px rgba(0, 0, 0, 0.34);
+}
+
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card img {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #121212;
+  border-bottom: 1px solid rgba(98, 233, 255, 0.08);
+}
+
+.card-body {
+  padding: 1.35rem;
+}
+
+.review-card-meta,
+.review-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.1rem;
+  align-items: center;
+}
+
+.review-card-meta {
+  margin: 0.95rem 0 1rem;
+}
+
+.review-header-meta {
+  margin-bottom: 1.3rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(98, 233, 255, 0.12);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(98, 233, 255, 0.05) 100%);
+}
+
+.review-rating,
+.review-date,
+.review-card-author,
+.author-kicker,
+.author-name {
+  margin: 0;
+}
+
+.review-rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 78, 203, 0.28);
+  background: rgba(255, 78, 203, 0.1);
+  color: #fff3fb;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.review-rating-large {
+  margin-left: auto;
+}
+
+.review-date {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.review-card-author,
+.author-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.review-card-author img,
+.author-avatar {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(98, 233, 255, 0.18);
+  padding: 0.35rem;
+  object-fit: contain;
+}
+
+.review-card-author span,
+.author-name {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.author-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.author-name {
+  font-size: 1rem;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+}
+
+.prose,
+.review-article {
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.prose,
+.review-article .review-content {
+  max-width: 72ch;
+}
+
+.review-article {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 78, 203, 0.06),
+    0 24px 52px rgba(0, 0, 0, 0.34);
+}
+
+.review-article img {
+  border-radius: 20px;
+  margin: 1.25rem 0;
+  border: 1px solid rgba(98, 233, 255, 0.12);
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 78, 203, 0.12);
+  padding: 2rem 0 3rem;
+  background: linear-gradient(180deg, rgba(8, 5, 14, 0.88) 0%, rgba(5, 2, 10, 0.96) 100%);
+}
+
+.footer-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.footer-brand {
+  margin: 0.65rem 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+@media (max-width: 920px) {
+  .header-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 780px) {
+  .site-title,
+  .page-title {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
+  }
+
+  .review-header-meta {
+    align-items: flex-start;
+  }
+
+  .review-rating-large {
+    margin-left: 0;
+  }
+}
+
+.review-image-full {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  background: rgba(5, 3, 10, 0.72);
+  padding: 0;
+}
+
+

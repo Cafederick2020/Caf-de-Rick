@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustracion de Suenos de trenes</title>
+  <desc id="desc">Paisaje ferroviario nocturno con una locomotora y cielo estrellado.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f2130"/>
+      <stop offset="100%" stop-color="#061018"/>
+    </linearGradient>
+    <linearGradient id="train" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6fd6ff"/>
+      <stop offset="100%" stop-color="#b6efff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#bg)"/>
+  <circle cx="765" cy="128" r="58" fill="#dff8ff" opacity="0.86"/>
+  <g fill="#dff8ff" opacity="0.75">
+    <circle cx="125" cy="95" r="3"/>
+    <circle cx="208" cy="148" r="2"/>
+    <circle cx="315" cy="80" r="3"/>
+    <circle cx="465" cy="120" r="2"/>
+    <circle cx="548" cy="92" r="3"/>
+    <circle cx="690" cy="188" r="2"/>
+  </g>
+  <path d="M0 458C152 408 316 386 473 392c152 6 322 48 487 126V640H0Z" fill="#0a1822"/>
+  <path d="M0 510c220-35 441-35 662 0 89 14 188 39 298 75v55H0Z" fill="#09131a"/>
+  <g transform="translate(168 287)">
+    <rect x="0" y="82" width="454" height="94" rx="18" fill="#102a3b"/>
+    <rect x="58" y="34" width="159" height="70" rx="12" fill="#16384d"/>
+    <rect x="148" y="0" width="82" height="52" rx="10" fill="#193f56"/>
+    <rect x="278" y="58" width="110" height="46" rx="10" fill="#16384d"/>
+    <rect x="298" y="80" width="22" height="44" fill="url(#train)"/>
+    <rect x="72" y="52" width="40" height="26" rx="5" fill="#b2ecff"/>
+    <rect x="121" y="52" width="40" height="26" rx="5" fill="#b2ecff"/>
+    <circle cx="98" cy="188" r="32" fill="#061018"/>
+    <circle cx="236" cy="188" r="32" fill="#061018"/>
+    <circle cx="354" cy="188" r="32" fill="#061018"/>
+    <circle cx="430" cy="188" r="32" fill="#061018"/>
+    <path d="M468 128h90c30 0 55 25 55 55v5h-88c-32 0-57-25-57-57z" fill="#153346"/>
+    <circle cx="528" cy="188" r="32" fill="#061018"/>
+  </g>
+  <text x="70" y="575" fill="#f3f7fa" font-family="Georgia, serif" font-size="54">Suenos de trenes</text>
+</svg>
