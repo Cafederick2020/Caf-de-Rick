@@ -2,26 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/sobre-nosotros/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
+  </url>
+  <url>
+    <loc>https://cafederick.cafederick2020.workers.dev/autores/jorge-mellado/</loc>
+    <lastmod>2026-03-25</lastmod>
+  </url>
+  <url>
+    <loc>https://cafederick.cafederick2020.workers.dev/autores/javier-martinez/</loc>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/criticas/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/criticas/los-pecadores-critica-ryan-coogler/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/criticas/suenos-de-trenes/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
   </url>
   <url>
     <loc>https://cafederick.cafederick2020.workers.dev/criticas/frankenstein-del-toro/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
   </url>
 </urlset>
